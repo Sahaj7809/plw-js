@@ -7,6 +7,7 @@ export class CartCheck {
   }
 
   async openProfile() {
+    //open user profile
     await this.page.goto('https://www.amazon.in/');
     await this.page.getByRole('link', { name: 'items in cart' }).click();
     await expect(this.cartEmptyMessage).toContainText('Your Amazon Cart is empty');
