@@ -1,23 +1,2 @@
-# Mark build / generated output so Linguist ignores it in language stats
-dist/** linguist-generated
-build/** linguist-generated
-public/** linguist-generated
-gh-pages/** linguist-generated
-
-# Mark docs, examples and demos as documentation (excluded from language percentages)
-docs/** linguist-documentation
-examples/** linguist-documentation
-demo/** linguist-documentation
-
-# Mark vendor / dependencies as vendored
-node_modules/** linguist-vendored
-vendor/** linguist-vendored
-
-# If your site generator produces HTML under a specific dir, mark only those files
-dist/**/*.html linguist-generated
-public/**/*.html linguist-generated
-
-# (Optional) If Linguist is misclassifying your true source, explicitly mark source dirs as JS
-# Use sparingly — only if necessary
-src/** linguist-language=JavaScript
-lib/** linguist-language=JavaScript
+*.html binary
+*.html linguist-generated
